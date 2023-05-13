@@ -53,7 +53,7 @@ export function Intro() {
         <span className="text-sky-300">for macOS minimalists</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
-        Commit is a lightweight Git client you can open from anywhere any time
+        Commits is a lightweight Git client you can open from anywhere any time
         you’re ready to commit your work with a single keyboard shortcut. It’s
         fast, beautiful, and completely unnecessary.
       </p>
