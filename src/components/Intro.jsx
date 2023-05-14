@@ -49,13 +49,11 @@ export function Intro() {
         </Link>
       </div>
       <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
-        Open-source Git client{' '}
-        <span className="text-sky-300">for macOS minimalists</span>
+        ORIGIN{' '}
+        <span className="text-red-800">Intelligence</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
-        Commits is a lightweight Git client you can open from anywhere any time
-        you’re ready to commit your work with a single keyboard shortcut. It’s
-        fast, beautiful, and completely unnecessary.
+        Origin developed and operates an industry-leading system to aggregate structured and unstructured data. We then use a combination of machine learning, artificial intelligence, and experienced human intelligence to process that data and monitor it in real-time. Origin provides services to government agencies and organizations.
       </p>
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
