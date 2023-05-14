@@ -45,7 +45,7 @@ export function Intro() {
     <>
       <div>
         <Link href="/">
-          <Logo className="inline-block h-8 w-auto" />
+          
         </Link>
       </div>
       <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
