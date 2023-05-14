@@ -5,7 +5,7 @@ export function Logo(props) {
 
   return (
     <svg viewBox="0 0 140 32" fill="none" aria-hidden="true" {...props}>
-      <title>Commit</title>
+      <title>ORIGIN</title>
       <mask id={`${id}-m`} fill="#fff">
         <path
           fillRule="evenodd"
