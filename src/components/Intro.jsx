@@ -53,7 +53,7 @@ export function Intro() {
         <span className="text-red-800">Intelligence</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
-        Origin developed and operates an industry-leading system to aggregate structured and unstructured data. We then use a combination of machine learning, artificial intelligence, and experienced human intelligence to process that data and monitor it in real-time. Origin provides services to government agencies and organizations.
+        Origin developed and operates an industry-leading system to aggregate structured and unstructured data. We then use a combination of machine learning, artificial intelligence, and experienced human intelligence to process that data and monitor it in real-time.
       </p>
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
