@@ -4,18 +4,18 @@ import { IconLink } from '@/components/IconLink'
 import { Logo } from '@/components/Logo'
 import { SignUpForm } from '@/components/SignUpForm'
 
-function BookIcon(props) {
+function CalendarIcon(props) {
   return (
     <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" {...props}>
-      <path d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+      <path d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" />
     </svg>
   )
 }
 
-function GitHubIcon(props) {
+function PhoneIcon(props) {
   return (
     <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor" {...props}>
-      <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+      <path d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" />
     </svg>
   )
 }
@@ -57,10 +57,10 @@ export function Intro() {
       </p>
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        <IconLink href="#" icon={BookIcon} className="flex-none">
+        <IconLink href="#" icon={CalendarIcon} className="flex-none">
           Schedule a Consultation
         </IconLink>
-        <IconLink href="#" icon={GitHubIcon} className="flex-none">
+        <IconLink href="#" icon={PhoneIcon} className="flex-none">
           Contact Us
         </IconLink>
       </div>
