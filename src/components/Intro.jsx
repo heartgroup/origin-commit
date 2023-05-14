@@ -57,14 +57,8 @@ export function Intro() {
       </p>
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        <IconLink href="#" icon={BookIcon} className="flex-none">
+        <IconLink icon={BookIcon} className="flex-none">
           Origin provides services to government agencies and organizations.
-        </IconLink>
-        <IconLink href="#" icon={GitHubIcon} className="flex-none">
-          GitHub
-        </IconLink>
-        <IconLink href="/rss/feed.xml" icon={FeedIcon} className="flex-none">
-          RSS
         </IconLink>
       </div>
     </>
@@ -74,7 +68,7 @@ export function Intro() {
 export function IntroFooter() {
   return (
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
-      Copyright Origin Intelligence Inc. All Rights Reserved.
+      Copyright &copy; {new Date().getFullYear()} Origin Intelligence Inc. All Rights Reserved.
      </p>
   )
 }
