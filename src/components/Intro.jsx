@@ -48,9 +48,9 @@ export function Intro() {
           
         </Link>
       </div>
-      <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
+      <h1 className="mt-14 font-display text-4xl/tight font-semibold text-white">
         ORIGIN / {' '}
-        <span className="text-sky-300">Intelligence</span>
+        <span className="text-sky-300 font-light">Intelligence</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
         Origin developed and operates an industry-leading system to aggregate structured and unstructured data. We then use a combination of machine learning, artificial intelligence, and experienced human intelligence to process that data and monitor it in real-time. We provide services to government agencies and organizations.
