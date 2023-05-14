@@ -58,7 +58,7 @@ export function Intro() {
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
         <IconLink href="#" icon={BookIcon} className="flex-none">
-          Origin provides services to government agencies and organizations.
+          Learn more abour Origin Investigations, a private investigation and intelligence agency.
         </IconLink>
       </div>
     </>
