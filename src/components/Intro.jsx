@@ -6,7 +6,7 @@ import { SignUpForm } from '@/components/SignUpForm'
 
 function CalendarIcon(props) {
   return (
-    <svg viewBox="0 0 32 32" aria-hidden="true" fill="currentColor" {...props}>
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" {...props}>
       <path d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" />
     </svg>
   )
@@ -54,6 +54,9 @@ export function Intro() {
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
         Origin developed and operates an industry-leading system to aggregate structured and unstructured data. We then use a combination of machine learning, artificial intelligence, and experienced human intelligence to process that data and monitor it in real-time.
+      </p>
+ <p className="mt-4 text-sm/6 text-gray-300">
+        We provide services to government agencies and organizations.
       </p>
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
