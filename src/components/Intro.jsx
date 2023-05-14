@@ -45,10 +45,10 @@ export function Intro() {
     <>
       <div>
         <Link href="/">
-          
+          <Logo className="inline-block h-8 w-auto" /> 
         </Link>
       </div>
-      <h1 className="mt-14 font-display text-4xl/tight font-semibold text-white">
+      <h1 className="mt-14 font-display text-4xl/tight font-bold text-white">
         ORIGIN <span className="font-normal">/</span> {' '}
         <span className="text-sky-300 font-light">Intelligence</span>
       </h1>
