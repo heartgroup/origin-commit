@@ -29,7 +29,7 @@ export function SignUpForm() {
     }
   
     const serviceID = 'service_6ureu2q';
-    const templateID = 'template_0jjieaz';
+    const templateID = 'template_4hdqwxt';
     const userID = 'PcVIawm6HMW7VKYcV';
   
     emailjs
