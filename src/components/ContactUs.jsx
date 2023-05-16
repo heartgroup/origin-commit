@@ -12,7 +12,7 @@ const ContactUs = () => {
       </p>
       <div className="w-fit mx-auto">
         <h2 className="w-fit uppercase">New York</h2>
-        <div className="w-full h-[1px] bg-[#111827] -my-4" />
+        <div className="w-full h-[1px] bg-[#111827] -mt-4" />
       </div>
       <p>
         287 Park Avenue South 2nd Floor<br />
