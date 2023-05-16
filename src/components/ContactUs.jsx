@@ -3,7 +3,7 @@ const ContactUs = () => {
     <div className="typography text-center">
       <div className="w-fit mx-auto">
         <h2 className="w-fit uppercase">Los Angeles</h2>
-        <div className="w-full h-[1px] bg-[#111827] my-0" />
+        <div className="w-full h-[1px] bg-[#111827]" />
       </div>
       <p>
         515 S. Flower Street 18th Floor<br />
