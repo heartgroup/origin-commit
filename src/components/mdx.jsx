@@ -65,6 +65,17 @@ function ArticleHeader({ id, title, date }) {
         </Link>
         <div className="h-[0.0625rem] w-3.5 bg-gray-400 lg:-mr-3.5 xl:mr-0 xl:bg-gray-300" />
       </div>
+      <ContentWrapper>
+        <div className="flex">
+          <Link href={`#${id}`} className="inline-flex">
+            {/* <FormattedDate
+              date={date}
+              className="text-2xs/4 font-medium text-gray-500 dark:text-white/50 xl:hidden"
+            /> */}
+            <h1 className="text-2xs/4 font-medium text-gray-500 dark:text-white/50 xl:hidden">{title}</h1>
+          </Link>
+        </div>
+      </ContentWrapper>
     </header>
   )
 }
