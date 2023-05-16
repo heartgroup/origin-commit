@@ -1,7 +1,7 @@
 const ContactUs = () => {
   return (
     <div className="typography text-center">
-      <h2 className="uppercase">Los Angeles</h2>
+      <h2 className="uppercase underline">Los Angeles</h2>
       <p>
         515 S. Flower Street 18th Floor<br />
         Los Angeles, CA 90071<br />
