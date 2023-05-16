@@ -36,7 +36,7 @@ export function SignUpForm() {
       .send(serviceID, templateID, { emailAddress }, userID)
       .then((response) => {
         setIsSent(true);
-        setEmailAddress('A representative will contact you.');
+        setEmailAddress('A representative will contact you');
         console.log('Email sent successfully!', response);
       })
       .catch((error) => {
