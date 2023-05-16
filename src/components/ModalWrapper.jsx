@@ -37,7 +37,16 @@ const ModalWrapper = ({ open, onClose, icon: Icon, title, children }) => {
                   <div className="sm:flex sm:items-start">
                     <div className="w-full">
                       <div className="flex items-center justify-between">
-                       
+                        <div className="flex items-center gap-4">
+                          {Icon && (
+                            <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
+                              <Icon className={clsx('flex-none w-4 h-4 text-green-600')} />
+                            </div>
+                          )}
+                          <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">
+                            {title}
+                          </Dialog.Title>
+                        </div>
                         <div className="ml-3 flex h-7 items-center">
                           <button
                             type="button"
