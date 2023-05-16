@@ -44,7 +44,7 @@ const ModalWrapper = ({ open, onClose, icon: Icon, title, children }) => {
                             </div>
                           )}
                           <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">
-                          
+                            {Title}
                           </Dialog.Title>
                         </div>
                         <div className="ml-3 flex h-7 items-center">
