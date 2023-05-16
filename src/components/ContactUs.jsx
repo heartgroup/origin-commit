@@ -3,7 +3,7 @@ const ContactUs = () => {
     <div className="typography text-center">
       <div className="w-fit mx-auto">
         <h2 className="w-fit uppercase !mt-4">Los Angeles</h2>
-        <div className="w-full h-[1px] bg-[#111827] !mt-2" />
+        <div className="w-full h-[1px] bg-[#111827] dark:bg-white !mt-2" />
       </div>
       <p className="!mt-4">
         515 S. Flower Street 18th Floor<br />
@@ -12,7 +12,7 @@ const ContactUs = () => {
       </p>
       <div className="w-fit mx-auto">
         <h2 className="w-fit uppercase !mt-4">New York</h2>
-        <div className="w-full h-[1px] bg-[#111827] !mt-2" />
+        <div className="w-full h-[1px] bg-[#111827] dark:bg-white !mt-2" />
       </div>
       <p className="!mt-4">
         287 Park Avenue South 2nd Floor<br />
@@ -21,7 +21,7 @@ const ContactUs = () => {
       </p>
       <div className="w-fit mx-auto">
         <h2 className="w-fit uppercase !mt-4">Washington DC</h2>
-        <div className="w-full h-[1px] bg-[#111827] !mt-2" />
+        <div className="w-full h-[1px] bg-[#111827] dark:bg-white !mt-2" />
       </div>
       <p className="!mt-4">
         1441 L Street NW 10th Floor<br />
