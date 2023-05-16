@@ -1,8 +1,13 @@
+import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { IconLink } from '@/components/IconLink'
 import { Logo } from '@/components/Logo'
 import { SignUpForm } from '@/components/SignUpForm'
+import IconButton from './IconButton'
+import ModalWrapper from './ModalWrapper'
+import ContactUs from './ContactUs'
 
 function CalendarIcon(props) {
   return (
@@ -41,14 +46,17 @@ function TwitterIcon(props) {
 }
 
 export function Intro() {
+  const [openSchedule, setOpenSchedule] = useState(false);
+  const [openContact, setOpenContact] = useState(false);
+
   return (
     <>
-      <div>
+      <div className="flex items-center jusitfy-center">
         <Link href="/">
-          <Logo className="inline-block h-8 w-auto" /> 
+          <Image src="/images/origin-logo.png" alt="" width={64} height={64} />
         </Link>
       </div>
-      <h1 className="mt-14 font-display text-4xl/tight font-semibold text-white">
+      <h1 className="mt-4 font-display text-4xl/tight font-semibold text-white">
         ORIGIN <span className="font-normal">/</span> {' '}
         <span className="text-sky-300 font-light">Intelligence</span>
       </h1>
@@ -57,13 +65,29 @@ export function Intro() {
       </p>
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        <IconLink href="#" icon={CalendarIcon} className="flex-none">
+        <IconButton icon={CalendarIcon} className="flex-none" onClick={() => setOpenSchedule(true)}>
           Schedule a Consultation
-        </IconLink>
-        <IconLink href="#" icon={PhoneIcon} className="flex-none">
+        </IconButton>
+        <IconButton icon={PhoneIcon} className="flex-none" onClick={() => setOpenContact(true)}>
           Contact Us
-        </IconLink>
+        </IconButton>
       </div>
+      <ModalWrapper
+        open={openSchedule}
+        onClose={() => setOpenSchedule(false)}
+        icon={CalendarIcon}
+        title="Schedule a Consultation"
+      >
+        
+      </ModalWrapper>
+      <ModalWrapper
+        open={openContact}
+        onClose={() => setOpenContact(false)}
+        icon={PhoneIcon}
+        title="Contact Us"
+      >
+        <ContactUs />
+      </ModalWrapper>
     </>
   )
 }

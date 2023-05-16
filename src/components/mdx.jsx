@@ -52,28 +52,19 @@ function ContentWrapper({ className, children }) {
   )
 }
 
-function ArticleHeader({ id, date }) {
+function ArticleHeader({ id, title, date }) {
   return (
     <header className="relative mb-10 xl:mb-0">
       <div className="pointer-events-none absolute left-[max(-0.5rem,calc(50%-18.625rem))] top-0 z-50 flex h-4 items-center justify-end gap-x-2 lg:left-0 lg:right-[calc(max(2rem,50%-38rem)+40rem)] lg:min-w-[32rem] xl:h-8">
         <Link href={`#${id}`} className="inline-flex">
-          <FormattedDate
+          {/* <FormattedDate
             date={date}
             className="hidden xl:pointer-events-auto xl:block xl:text-2xs/4 xl:font-medium xl:text-white/50"
-          />
+          /> */}
+          <h1 className="hidden xl:pointer-events-auto xl:block font-medium xl:text-2xs/4 xl:font-medium xl:text-white/50">{title}</h1>
         </Link>
         <div className="h-[0.0625rem] w-3.5 bg-gray-400 lg:-mr-3.5 xl:mr-0 xl:bg-gray-300" />
       </div>
-      <ContentWrapper>
-        <div className="flex">
-          <Link href={`#${id}`} className="inline-flex">
-            <FormattedDate
-              date={date}
-              className="text-2xs/4 font-medium text-gray-500 dark:text-white/50 xl:hidden"
-            />
-          </Link>
-        </div>
-      </ContentWrapper>
     </header>
   )
 }
@@ -118,7 +109,7 @@ export const article = function Article({ id, title, date, children }) {
       style={{ paddingBottom: `${heightAdjustment}px` }}
     >
       <div ref={heightRef}>
-        <ArticleHeader id={id} date={date} />
+        <ArticleHeader id={id} title={title} date={date} />
         <ContentWrapper className="typography">{children}</ContentWrapper>
       </div>
     </article>
