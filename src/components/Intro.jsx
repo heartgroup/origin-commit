@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 
 import { IconLink } from '@/components/IconLink'
 import { Logo } from '@/components/Logo'
@@ -8,6 +9,8 @@ import { SignUpForm } from '@/components/SignUpForm'
 import IconButton from './IconButton'
 import ModalWrapper from './ModalWrapper'
 import ContactUs from './ContactUs'
+
+const CalendlyWidget = dynamic(() => import('./CalendlyWidget'), { ssr: false });
 
 function CalendarIcon(props) {
   return (
@@ -78,7 +81,9 @@ export function Intro() {
         icon={CalendarIcon}
         title="Schedule a Consultation"
       >
-        
+        <div className="h-[600px]">
+          <CalendlyWidget />
+        </div>
       </ModalWrapper>
       <ModalWrapper
         open={openContact}

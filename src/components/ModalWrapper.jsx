@@ -33,11 +33,11 @@ const ModalWrapper = ({ open, onClose, icon: Icon, title, children }) => {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                <div className="bg-white px-6 pt-6 pb-8">
                   <div className="sm:flex sm:items-start">
                     <div className="w-full">
                       <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-4">
+                        <div className="flex items-center">
                           {Icon && (
                             <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full sm:mx-0 sm:h-10 sm:w-10">
                               <Icon className={clsx('flex-none w-4 h-4 text-blue-950')} />
