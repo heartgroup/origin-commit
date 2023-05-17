@@ -69,6 +69,8 @@ export function Intro() {
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
         <IconButton icon={CalendarIcon} className="flex-none" onClick={() => setOpenSchedule(true)}>
+          Login
+        </IconButton>  <IconButton icon={CalendarIcon} className="flex-none" onClick={() => setOpenSchedule(true)}>
           Schedule a Consultation
         </IconButton>
         <IconButton icon={PhoneIcon} className="flex-none" onClick={() => setOpenContact(true)}>
